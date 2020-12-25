@@ -29,15 +29,15 @@
 				<form action="index.html" method='post' onsubmit='return validateAddCourse();'>
 
 					<label>Course Name</label>
-					<div id="errCname">error: digits are not allowed</div>
+					<div id="errCname">Error: Course name is mandatory and should be at least 10 alphabet characters</div>
 					<input type="text" placeholder="Course Name" id="cname" name="cname"><br />
 
 					<label>Course Code</label>
-					<div id="errCcode">error: digits are not allowed</div>
+					<div id="errCcode">Error: Course code is mandatory and should have the following pattern (140XXXXX-X) where X is a digit (0-9)</div>
 					<input type="text" placeholder="Course Code" id="ccode" name="ccode"><br />
 
 					<label>Level</label>
-					<div id="errLevel">error: digits are not allowed</div>
+					<div id="errLevel">Error: Level is mandatory</div>
 					<select id="level-menu">
 						<option>Please select the course level</option>
 						<option>1</option>
@@ -53,7 +53,7 @@
 					</select><br />
 
 					<label>Credit Hours</label>
-					<div id='errCredit'>error: digits are not allowed</div>
+					<div id='errCredit'>Error: Credit hours is mandatory</div>
 					<select id="credit-menu">
 						<option>Please select the course credit hours</option>
 						<option>1</option>
@@ -64,11 +64,11 @@
 					</select><br />
 
 					<label>Course Description</label>
-					<div id='errCdescription'>error: digits are not allowed</div>
+					<div id='errCdescription'>Error: Course description is mandatory and should be at least 30 alphabet characters</div>
 					<textarea placeholder="Course Description" id="cdescription" name="cdescription" rows='10' cols='50'></textarea><br />
 
 					<label>Prerequisite Course</label>
-					<div id='errPrecourse'>error: digits are not allowed</div>
+					<div id='errPrecourse'>Error: Prerequisite Course should have the following pattern (140XXXXX-X) where X is a digit (0-9)</div>
 					<input type="text" placeholder="Prerequisite Course" id="precourse" name="precourse"><br />
 
 					<input type="submit" id="submit" value="submit">

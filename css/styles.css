@@ -143,6 +143,7 @@ header ul li a:hover {
 
 .continer-formDiv input[type="submit"]:hover {
 	background-color: #EB7900;
+	cursor: pointer;
 }
 .continer-formDiv div {
 	display: none;
