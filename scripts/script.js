@@ -51,7 +51,7 @@ function validateAddCourse() {
 }
 
 function validateAddCourseStudents() {
-	var valid = false;
+	var valid = true;
 
 //----------------------------------student id validate-------------------------------------------------
 	if(document.getElementById("sid").value.search(/^[0-9]{9}$/) >= 0){
