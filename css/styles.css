@@ -5,18 +5,22 @@
 	list-style-type: none;
 	text-decoration: none;
 }
+
+orange #EB7900
+blue #00ACEB
+
 body {
 	margin: auto;
-	max-width: 1250px;
+	/*max-width: 1250px;*/
 }
 /*header css*/
 header {
-	background-color: rgba(0,0,60,1);
+	background-color: #00ACEB;
 }
 header h1 {
 	padding: 20px;
 	display: inline-block;
-	color: rgba(255,128,0,1);
+	color: #EB7900;
 }
 
 header span {
@@ -35,12 +39,16 @@ header ul li a {
 	color: white;
 }
 header ul li a:hover {
-	color: rgba(255,128,0,1);
+	color: #EB7900;
+}
+.current {
+	color: #EB7900;
 }
 /*-------------------------------------------------------------------------------------*/
-/*container*/
+/*home page container*/
 .continer {
-
+	max-width: 1200px;
+	margin: auto;
 }
 .continer-description {
 	overflow: auto;
@@ -57,14 +65,14 @@ header ul li a:hover {
 .cscourses {
 	font-size: 40px;
 	font-weight: bold;
-	color: rgba(0,0,60,1);
+	color: #00749E;
 }
 .cscourses span {
-	color: rgba(255,128,0,1);
+	color: #EB7900;
 }
 .cscourses-description {
 	font-size: 30px;
-	color: rgba(0,0,60,1);
+	color: #00749E;
 }
 .continer-description p {
 	font-weight: bold;
@@ -85,23 +93,65 @@ header ul li a:hover {
 	padding: 10px 0px;
 	font-size: 30px;
 	font-weight: bold;
-	color: rgba(0,0,60,1);
+	color: #00749E;
 }
 .course-image {
 	margin-right: 20px;
 	float: left;
 	width: 210px;
 	height: 300px;
+	box-shadow: 0px 0px 10px rgba(96,96,96,0.5);
 }
 .course-P {
 	padding: 10px 10px;
 	font-weight: bold;
 	font-size: 20px;
-	color: rgba(255,128,0,1);
+	color: #EB7900;
 
 }
 .course-P span {
-	color: rgba(0,0,60,1); 
+	color: #00749E; 
+}
+/*add_course container*/
+.continer-formDiv {
+	max-width: 600px;
+	border: solid #00749E;
+	border-radius: 5px;
+	padding: 40px;
+	margin: 50px auto;
+	box-shadow: 0px 0px 10px rgba(96,96,96,0.5);
+}
+.continer-formDiv label {
+	font-size: 25px;
+	font-weight: bold;
+	color: #EB7900;
+}
+.continer-formDiv input, select, textarea{
+	box-shadow: 0px 0px 10px rgba(96,96,96,0.5);
+	outline-color: #EB7900;
+	border: solid #00749E;
+	width: 100%;
+	margin: 5px auto 30px auto;
+	padding: 8px;
+	font-size: 18px;
+	border-radius: 5px;
+}
+.continer-formDiv input[type="submit"] {
+	background-color: #00749E;
+	color: white;
+}
+
+.continer-formDiv input[type="submit"]:hover {
+	background-color: #EB7900;
+}
+.continer-formDiv div {
+	display: none;
+	color: white;
+	margin: 2px 0px 2px 0px;
+	padding: 2px 10px 2px 10px;
+	background-color: rgba(255,51,51,0.8);
+	border-radius: 3px;
+	box-shadow: 0px 0px 2px rgba(96,96,96,0.5);
 }
 /*-------------------------------------------------------------------------------------*/
 
@@ -109,7 +159,7 @@ header ul li a:hover {
 footer {
 	clear: right;
 	color: white;
-	background-color: rgba(0,0,60,1);
+	background-color: #00ACEB;
 }
 .footer-information {
 	text-align: center;
@@ -121,7 +171,7 @@ footer {
 	display: inline-block;
 }
 .footer-information-Box-discription {
-	color: rgba(255,128,0,1);
+	color: #EB7900;
 	font-weight: bold;
 	font-size: 25px;
 }

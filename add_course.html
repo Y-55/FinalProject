@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSCourses|Add Course(Admin)</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<meta charset="utf-8">
+		<meta name="description" content="a page contain a form for the admins to add new courses to the website">
+		<meta name="keywords" content="HTML, CSS,java script">
+		<meta name='auther' content='YusufAbdulwahab'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<!-- The width=device-width part sets the width of the page to follow the screen-width of the device
+		The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
+		<script src="scripts/script.js"></script>
+		<!--this is the source of java scrpt code-->
+	</head>
+	<body>
+<!--________________________________header and menue codes___________________________________-->
+		<header>
+				<a href="index.html"><h1>CS<span>Courses</span></h1></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a class="current" href="add_course.html">Add Course(Admin)</a></li>
+					<li><a href="add_courses_for_student.html">Add Course(Student)</a></li>
+				</ul>
+		</header>
+<!--________________________________content codes___________________________________-->
+		<div class=".continer">
+			<div class="continer-formDiv">
+				<form action="index.html" method='post' onsubmit='return validateFeedBack();'>
+
+					<label>Course Name</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<input type="text" placeholder="Course Name" id="cname" name="cname"><br />
+
+					<label>Course Code</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<input type="text" placeholder="Course Code" id="ccode" name="ccode"><br />
+
+					<label>Level</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<select id="level-menu">
+						<option>select course level</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+					</select><br />
+
+					<label>Credit Hours</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<select id="credit-menu">
+						<option>select course credit hours</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select><br />
+
+					<label>Course Description</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<textarea placeholder="Course Description" id="cdescription" name="cdescription" rows='10' cols='50'></textarea><br />
+
+					<label>Prerequisite Course</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<input type="text" placeholder="Prerequisite Course" id="precourse" name="precourse"><br />
+
+					<input type="submit" id="submit" value="submit">
+			</div>
+		</div>		
+<!--________________________________footer codes___________________________________-->
+		<footer>
+			<!--the apper div of the footer-->
+		<div class='footer-information'>
+			<div class='footer-information-Box'>
+				<p class='footer-information-Box-discription'>Follow CSCourses</p>
+				<ul>
+					<li><a href="">Twitter</a></li>
+					<li><a href="">Instagram</a></li>
+					<li><a href="">Snapchat</a></li>
+					<li><a href="">Facebook</a></li>
+				</ul>
+			</div>
+			<div class='footer-information-Box'>
+				<p class='footer-information-Box-discription'>Customer Care</p>
+				<ul>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Warranty Policy</a></li>
+					<li><a href="">Return & Exchange</a></li>
+					<li><a href="">contact us</a></li>
+					<li><a href="">92000000</a></li>
+
+				</ul>
+			</div>
+			<div class='footer-information-Box'>
+				<p class='footer-information-Box-discription'>About CSCourses</p>
+				<ul>
+					<li><a href="">CSCourses Profile</a></li>
+					<li><a href="">Investor Guide & Services</a></li>
+					<li><a href="">Sustainability</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--the down div of the footer-->
+		<div class='footer-copyright'>
+			<p> copyright preserved for the site 2020 | YusufAbdulwahab<p>
+		</div>
+		</footer>
+	</body>
+</html>

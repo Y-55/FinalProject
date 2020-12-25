@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CSCourses</title>
+		<title>CSCourses|Home</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<meta charset="utf-8">
-
-		<script href="scripts/script.js"></script>
+		<meta name="description" content="the home page for a website to add new courses for the students">
+		<meta name="keywords" content="HTML, CSS,java script">
+		<meta name='auther' content='YusufAbdulwahab'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<!-- The width=device-width part sets the width of the page to follow the screen-width of the device
+		The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
+		<script src="scripts/script.js"></script>
+		<!--this is the source of java scrpt code-->
 	</head>
 	<body>
+<!--________________________________header and menue codes___________________________________-->
 		<header>
 				<a href="index.html"><h1>CS<span>Courses</span></h1></a>
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="">Add Course</a></li>
-					<li><a href="">Add Course for Students</a></li>
+					<li><a class="current" href="index.html">Home</a></li>
+					<li><a href="add_course.html">Add Course(Admin)</a></li>
+					<li><a href="add_courses_for_student.html">Add Course(Student)</a></li>
 				</ul>
 		</header>
+<!--________________________________content codes___________________________________-->
 
 		<div class="continer">
 			<div class="continer-description">
@@ -32,6 +40,7 @@
 					<p class="course-P">Course Name: <span>Web Applications</span></p>
 					<p class="course-P">Course Code: <span>14010000-3</span></p>
 					<p class="course-P">Course Credit Hours: <span>3</span></p>
+					<p class="course-P">Course Level: <span>5</span></p>
 					<p class="course-P">Course Description: <span>The course covers construction and design of dynamic web pages. The emphasis lies on standardised HTML and CSS to create structure and appearance. The course also covers basic JavaScript to create a dynamic behaviour on web sites.
 					Other parts that are covered are availability, responsive design and validation of web pages. </span></p>
 				</div>
@@ -41,8 +50,8 @@
 					<p class="course-P">Course Name: <span>Software Engineering</span></p>
 					<p class="course-P">Course Code: <span>14020000-4</span></p>
 					<p class="course-P">Course Credit Hours: <span>4</span></p>
-					<p class="course-P">Course Description: <span>The course covers construction and design of dynamic web pages. The emphasis lies on standardised HTML and CSS to create structure and appearance. The course also covers basic JavaScript to create a dynamic behaviour on web sites.
-					Other parts that are covered are availability, responsive design and validation of web pages. </span></p>
+					<p class="course-P">Course Level: <span>6</span></p>
+					<p class="course-P">Course Description: <span>TAs a software engineer, you'll work in a constantly evolving environment, due to technological advances and the strategic direction of the organisation you work for. You'll create, maintain, audit and improve systems to meet particular needs, often as advised by a systems analyst or architect, testing both hard and software systems to diagnose and resolve system faults.</span></p>
 				</div>
 				<div class="AllCourses-div">
 					<p class="AllCourses-cat">Java Programming</p>
@@ -50,8 +59,8 @@
 					<p class="course-P">Course Name: <span>Java Programming</span></p>
 					<p class="course-P">Course Code: <span>14030000-4</span></p>
 					<p class="course-P">Course Credit Hours: <span>4</span></p>
-					<p class="course-P">Course Description: <span>The course covers construction and design of dynamic web pages. The emphasis lies on standardised HTML and CSS to create structure and appearance. The course also covers basic JavaScript to create a dynamic behaviour on web sites.
-					Other parts that are covered are availability, responsive design and validation of web pages. </span></p>
+					<p class="course-P">Course Level: <span>1</span></p>
+					<p class="course-P">Course Description: <span>In this Introduction to Java Programming training course, you gain extensive hands-on experience writing, compiling, and executing Java programs. You will learn to build robust applications that use Java’s object-oriented features. Java is known for reliability, maintainability, and ease of development. Its unique architecture enables programmers to develop a single application that can seamlessly run across multiple platforms. Attend this course and learn to leverage these key features.</span></p>
 				</div>
 				<div class="AllCourses-div">
 					<p class="AllCourses-cat">Computer Graphics</p>
@@ -59,8 +68,8 @@
 					<p class="course-P">Course Name: <span>Computer Graphics</span></p>
 					<p class="course-P">Course Code: <span>14040000-4</span></p>
 					<p class="course-P">Course Credit Hours: <span>4</span></p>
-					<p class="course-P">Course Description: <span>The course covers construction and design of dynamic web pages. The emphasis lies on standardised HTML and CSS to create structure and appearance. The course also covers basic JavaScript to create a dynamic behaviour on web sites.
-					Other parts that are covered are availability, responsive design and validation of web pages. </span></p>
+					<p class="course-P">Course Level: <span>4</span></p>
+					<p class="course-P">Course Description: <span>Computer graphics are an intrinsic component of many modern software applications and are often essential to the success of these applications. The objective of this course is to familiarize students with fundamental algorithms and data structures that are used in today’s interactive graphics systems as well as programming and architecture of high-resolution graphics computers. </span></p>
 				</div>
 				<div class="AllCourses-div">
 					<p class="AllCourses-cat">digital design</p>
@@ -68,8 +77,9 @@
 					<p class="course-P">Course Name: <span>digital design</span></p>
 					<p class="course-P">Course Code: <span>14050000-3</span></p>
 					<p class="course-P">Course Credit Hours: <span>3</span></p>
-					<p class="course-P">Course Description: <span>The course covers construction and design of dynamic web pages. The emphasis lies on standardised HTML and CSS to create structure and appearance. The course also covers basic JavaScript to create a dynamic behaviour on web sites.
-					Other parts that are covered are availability, responsive design and validation of web pages. </span></p>
+					<p class="course-P">Course Level: <span>1</span></p>
+					<p class="course-P">Course Description: <span>Digital design is a general term that is more relevant now than ever before. Put simply, any kind of design that appears in a digital format (on an app or website), rather than in print (on a physical page), is considered digital design.
+					In an increasingly digitized world, it’s likely that as a designer, you will be working quite a bit with digital design. Whether you’re a UX designer or a graphic artist, understanding the specifics of designing for digital platforms will help you take your career to the next level.</span></p>
 				</div>
 				<div class="AllCourses-div">
 					<p class="AllCourses-cat">Moblie Applications</p>
@@ -77,13 +87,13 @@
 					<p class="course-P">Course Name: <span>Moblie Applications</span></p>
 					<p class="course-P">Course Code: <span>14060000-2</span></p>
 					<p class="course-P">Course Credit Hours: <span>2</span></p>
-					<p class="course-P">Course Description: <span>The course covers construction and design of dynamic web pages. The emphasis lies on standardised HTML and CSS to create structure and appearance. The course also covers basic JavaScript to create a dynamic behaviour on web sites.
-					Other parts that are covered are availability, responsive design and validation of web pages. </span></p>
+					<p class="course-P">Course Level: <span>5</span></p>
+					<p class="course-P">Course Description: <span>This project-oriented course examines the principles of mobile application design and development. Students will learn application development on the Android platform. Topics will include memory management; user interface design; user interface building; input methods; data handling; network techniques and URL loading; and, finally, specifics such as GPS and motion sensing. Students are expected to work on a project that produces a professional-quality mobile application. Projects will be deployed in real-world applications.</span></p>
 				</div>
 			</div>
 
 		</div>
-
+<!--________________________________footer codes___________________________________-->
 		<footer>
 			<!--the apper div of the footer-->
 		<div class='footer-information'>

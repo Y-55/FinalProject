@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSCourses|Add Course(Student)</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<meta charset="utf-8">
+		<meta name="description" content="a page contain a form for the Students to add new courses to their plan">
+		<meta name="keywords" content="HTML, CSS,java script">
+		<meta name='auther' content='YusufAbdulwahab'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<!-- The width=device-width part sets the width of the page to follow the screen-width of the device
+		The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
+		<script src="scripts/script.js"></script>
+		<!--this is the source of java scrpt code-->
+	</head>
+	<body>
+<!--________________________________header and menue codes___________________________________-->
+		<header>
+				<a href="index.html"><h1>CS<span>Courses</span></h1></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="add_course.html">Add Course(Admin)</a></li>
+					<li><a class="current" href="add_courses_for_student.html">Add Course(Student)</a></li>
+				</ul>
+		</header>
+<!--________________________________content codes___________________________________-->
+		<div class=".continer">
+			<div class="continer-formDiv">
+				<form action="index.html" method='post' onsubmit='return validateFeedBack();'>
+
+					<label>Student ID</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<input type="text" placeholder="Student ID" id="sid" name="sid"><br />
+
+					<label>Student Name</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<input type="text" placeholder="Student Name" id="sname" name="sname"><br />
+
+					<label>Student Email Address</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<input type="text" placeholder="Student Email Address" id="semail" name="semail"><br />
+
+					<label>course code 1</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<select id="course-menu1">
+						<option>Please select the course code 1</option>
+						<option>14010000-3</option>
+						<option>14020000-4</option>
+						<option>14030000-4</option>
+						<option>14040000-4</option>
+						<option>14050000-3</option>
+						<option>14060000-2</option>
+					</select><br />
+
+					<label>course code 2</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<select id="course-menu2">
+						<option>Please select the course code 2</option>
+						<option>14010000-3</option>
+						<option>14020000-4</option>
+						<option>14030000-4</option>
+						<option>14040000-4</option>
+						<option>14050000-3</option>
+						<option>14060000-2</option>
+					</select><br />
+
+					<label>course code 3</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<select id="course-menu3">
+						<option>Please select the course code 3</option>
+						<option>14010000-3</option>
+						<option>14020000-4</option>
+						<option>14030000-4</option>
+						<option>14040000-4</option>
+						<option>14050000-3</option>
+						<option>14060000-2</option>
+					</select><br />
+
+					<label>course code 4</label>
+					<div class='errName2'>error: digits are not allowed</div>
+					<select id="course-menu4">
+						<option>Please select the course code 4</option>
+						<option>14010000-3</option>
+						<option>14020000-4</option>
+						<option>14030000-4</option>
+						<option>14040000-4</option>
+						<option>14050000-3</option>
+						<option>14060000-2</option>
+					</select><br />
+
+					
+
+					<input type="submit" id="submit" value="submit">
+			</div>
+		</div>		
+<!--________________________________footer codes___________________________________-->
+		<footer>
+			<!--the apper div of the footer-->
+		<div class='footer-information'>
+			<div class='footer-information-Box'>
+				<p class='footer-information-Box-discription'>Follow CSCourses</p>
+				<ul>
+					<li><a href="">Twitter</a></li>
+					<li><a href="">Instagram</a></li>
+					<li><a href="">Snapchat</a></li>
+					<li><a href="">Facebook</a></li>
+				</ul>
+			</div>
+			<div class='footer-information-Box'>
+				<p class='footer-information-Box-discription'>Customer Care</p>
+				<ul>
+					<li><a href="">FAQ</a></li>
+					<li><a href="">Warranty Policy</a></li>
+					<li><a href="">Return & Exchange</a></li>
+					<li><a href="">contact us</a></li>
+					<li><a href="">92000000</a></li>
+
+				</ul>
+			</div>
+			<div class='footer-information-Box'>
+				<p class='footer-information-Box-discription'>About CSCourses</p>
+				<ul>
+					<li><a href="">CSCourses Profile</a></li>
+					<li><a href="">Investor Guide & Services</a></li>
+					<li><a href="">Sustainability</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--the down div of the footer-->
+		<div class='footer-copyright'>
+			<p> copyright preserved for the site 2020 | YusufAbdulwahab<p>
+		</div>
+		</footer>
+	</body>
+</html>
