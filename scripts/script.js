@@ -5,7 +5,7 @@ function validateAddCourse() {
 	//x = document.getElementById("sid").value.search(/^[a-zA-Z]{10,}$/);
 
 //----------------------------------course name validate-------------------------------------------------
-	if(document.getElementById("cname").value.search(/^[a-zA-Z]{10,}$/) >= 0){
+	if(document.getElementById("cname").value.search(/^[A-Za-z]{10,}$/) >= 0){
 		document.getElementById("errCname").style.display = "none";
 	}else {
 		valid = false;
@@ -33,7 +33,7 @@ function validateAddCourse() {
 		document.getElementById("errCredit").style.display = "block";
 	}
 //--------------------------------course description validate----------------------------------------------
-	if(document.getElementById("cdescription").value.search(/^[a-zA-Z\s]{30,}$/) >= 0){
+	if(document.getElementById("cdescription").value.search(/^[A-Za-z\s]{30,}$/) >= 0){
 		document.getElementById("errCdescription").style.display = "none";
 	}else {
 		valid = false;
@@ -61,7 +61,7 @@ function validateAddCourseStudents() {
 		document.getElementById("errSid").style.display = "block";
 	}
 //----------------------------------student name validate-------------------------------------------------
-	if(document.getElementById("sname").value.search(/^[a-zA-Z]{10,}$/) >= 0){
+	if(document.getElementById("sname").value.search(/^[A-Za-z]{10,}$/) >= 0){
 		document.getElementById("errSname").style.display = "none";
 	}else {
 		valid = false;
