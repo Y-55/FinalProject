@@ -26,20 +26,20 @@
 <!--________________________________content codes___________________________________-->
 		<div class=".continer">
 			<div class="continer-formDiv">
-				<form action="index.html" method='post' onsubmit='return validateFeedBack();'>
+				<form action="index.html" method='post' onsubmit='return validateAddCourse();'>
 
 					<label>Course Name</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id="errCname">error: digits are not allowed</div>
 					<input type="text" placeholder="Course Name" id="cname" name="cname"><br />
 
 					<label>Course Code</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id="errCcode">error: digits are not allowed</div>
 					<input type="text" placeholder="Course Code" id="ccode" name="ccode"><br />
 
 					<label>Level</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id="errLevel">error: digits are not allowed</div>
 					<select id="level-menu">
-						<option>select course level</option>
+						<option>Please select the course level</option>
 						<option>1</option>
 						<option>2</option>
 						<option>3</option>
@@ -53,21 +53,22 @@
 					</select><br />
 
 					<label>Credit Hours</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id='errCredit'>error: digits are not allowed</div>
 					<select id="credit-menu">
-						<option>select course credit hours</option>
+						<option>Please select the course credit hours</option>
 						<option>1</option>
 						<option>2</option>
 						<option>3</option>
 						<option>4</option>
+						<option>5</option>
 					</select><br />
 
 					<label>Course Description</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id='errCdescription'>error: digits are not allowed</div>
 					<textarea placeholder="Course Description" id="cdescription" name="cdescription" rows='10' cols='50'></textarea><br />
 
 					<label>Prerequisite Course</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id='errPrecourse'>error: digits are not allowed</div>
 					<input type="text" placeholder="Prerequisite Course" id="precourse" name="precourse"><br />
 
 					<input type="submit" id="submit" value="submit">

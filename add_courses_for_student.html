@@ -26,24 +26,24 @@
 <!--________________________________content codes___________________________________-->
 		<div class=".continer">
 			<div class="continer-formDiv">
-				<form action="index.html" method='post' onsubmit='return validateFeedBack();'>
+				<form action="index.html" method='post' onsubmit='return  validateAddCourseStudents();'>
 
 					<label>Student ID</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id='errSid'>error: digits are not allowed</div>
 					<input type="text" placeholder="Student ID" id="sid" name="sid"><br />
 
 					<label>Student Name</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id='errSname'>error: digits are not allowed</div>
 					<input type="text" placeholder="Student Name" id="sname" name="sname"><br />
 
 					<label>Student Email Address</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id='errSemail'>error: digits are not allowed</div>
 					<input type="text" placeholder="Student Email Address" id="semail" name="semail"><br />
 
 					<label>course code 1</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id='errCourse-menu1'>error: digits are not allowed</div>
 					<select id="course-menu1">
-						<option>Please select the course code 1</option>
+						<option>Please select the course code 1...</option>
 						<option>14010000-3</option>
 						<option>14020000-4</option>
 						<option>14030000-4</option>
@@ -53,9 +53,9 @@
 					</select><br />
 
 					<label>course code 2</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id='errCourse-menu2'>error: digits are not allowed</div>
 					<select id="course-menu2">
-						<option>Please select the course code 2</option>
+						<option>Please select the course code 2...</option>
 						<option>14010000-3</option>
 						<option>14020000-4</option>
 						<option>14030000-4</option>
@@ -65,7 +65,7 @@
 					</select><br />
 
 					<label>course code 3</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id='errCourse-menu3'>error: digits are not allowed</div>
 					<select id="course-menu3">
 						<option>Please select the course code 3</option>
 						<option>14010000-3</option>
@@ -77,7 +77,7 @@
 					</select><br />
 
 					<label>course code 4</label>
-					<div class='errName2'>error: digits are not allowed</div>
+					<div id='errCourse-menu4'>error: digits are not allowed</div>
 					<select id="course-menu4">
 						<option>Please select the course code 4</option>
 						<option>14010000-3</option>
